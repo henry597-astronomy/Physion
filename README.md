@@ -19,7 +19,7 @@ pnpm check
 pnpm build:static
 ```
 
-The static production files are generated in `dist/public`. Upload that directory to a static host such as GitHub Pages, Cloudflare Pages, Netlify, or Vercel.
+The static production files are generated in `dist/public`. The repository includes `vercel.json`, which sets the Vercel build command, output directory, and SPA rewrites for nested lesson and biography routes. Import the `Physion` repository into Vercel and deploy with the default project settings.
 
 ## Main routes
 
