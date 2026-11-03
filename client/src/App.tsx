@@ -10,6 +10,7 @@ import LessonPage from "./pages/LessonPage";
 import NotFound from "./pages/NotFound";
 import ScientistPage from "./pages/ScientistPage";
 import Scientists from "./pages/Scientists";
+import Settings from "./pages/Settings";
 
 function Router() {
   return <Switch>
@@ -19,6 +20,7 @@ function Router() {
     <Route path="/scientists" component={Scientists} />
     <Route path="/scientists/:slug" component={ScientistPage} />
     <Route path="/glossary" component={Glossary} />
+    <Route path="/settings" component={Settings} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
   </Switch>;

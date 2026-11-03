@@ -1,10 +1,11 @@
 {
   "routes": [
-    { "path": "/", "title": "Cosmic Path — Learn physics from first principles" },
-    { "path": "/learn", "title": "Course map — Cosmic Path" },
-    { "path": "/learn/:slug", "title": "Lesson — Cosmic Path" },
-    { "path": "/scientists", "title": "Scientists — Cosmic Path" },
-    { "path": "/scientists/:slug", "title": "Scientist biography — Cosmic Path" },
-    { "path": "/glossary", "title": "Physics glossary — Cosmic Path" }
+    { "path": "/", "title": "EthioCosmos — Learn physics from first principles" },
+    { "path": "/learn", "title": "Courses — EthioCosmos" },
+    { "path": "/learn/:slug", "title": "Lesson — EthioCosmos" },
+    { "path": "/scientists", "title": "Biographies — EthioCosmos" },
+    { "path": "/scientists/:slug", "title": "Scientist biography — EthioCosmos" },
+    { "path": "/glossary", "title": "Physics glossary — EthioCosmos" },
+    { "path": "/settings", "title": "Settings — EthioCosmos" }
   ]
 }
