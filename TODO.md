@@ -1,23 +1,20 @@
-# Cosmic Path delivery outcomes
+# Cosmic Path rebuild outcomes
 
-## Guided beginner learning journey
-- Create a welcoming homepage and topic discovery experience that communicates the learning journey and encourages learners to begin or continue.
-- Provide a guided learning path that sequences foundational concepts before advancing into classical mechanics, relativity, quantum physics, astrophysics, and related topics.
-- Divide lessons into short, progress-friendly sections with visible completion states.
+## Course navigation
+- Provide real multi-page navigation for the home page, course map, individual lessons, scientist biographies, and glossary.
+- Provide a persistent course sidebar on lesson pages with numbered progression, active state, and completion state.
+- Keep route declarations synchronized in `client/public/manus-routes.json`.
 
-## Beginner-first content and visuals
-- Provide beginner-focused topic content with plain-language explanations, helpful analogies, key terms, and clear summaries.
-- Include visual examples and conceptual diagrams that make abstract physical ideas easier to understand.
-- Include cross-links between related concepts so learners can see how major branches of physics fit together.
-
-## Knowledge checks and learner progress
-- Include simple quizzes and checks for understanding with immediate explanatory feedback.
-- Provide a progress overview showing completed lessons, current position, and upcoming topics.
-- Preserve completion and current-position state between visits in the browser.
+## Detailed lessons
+- Create five detailed lessons covering foundations, classical mechanics, relativity, quantum physics, and astrophysics.
+- Each lesson must include learning objectives, structured sections, plain-language explanations, callouts, vocabulary, a knowledge check, and a next-lesson path.
+- Preserve browser-based lesson completion between visits.
 
 ## Scientist biographies
-- Include biographies of influential scientists that connect their discoveries and historical context to relevant lessons.
+- Create dedicated biography pages for Galileo Galilei, Isaac Newton, Albert Einstein, Emmy Noether, Marie Curie, and Vera Rubin.
+- Connect each biography to a related lesson and explain the person’s historical context and contributions.
 
-## Delivery quality
-- Use a distinctive editorial science visual system with original supporting imagery, responsive layouts, and accessible interaction states.
-- Keep the published route manifest synchronized with the implemented page routes.
+## Visual and interaction quality
+- Replace the prior decorative landing-page treatment with a restrained, readable academic course interface.
+- Use supporting images purposefully in course headers and lesson content without letting visuals overwhelm navigation or text.
+- Verify desktop and mobile layouts, TypeScript diagnostics, and static production build before checkpointing.
