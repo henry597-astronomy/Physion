@@ -1,9 +1,9 @@
 export const assets = {
-  hero: "/manus-storage/async-images/U3bZOyLnEKehWK5G8wnaw0/image-1.webp",
-  mechanics: "/manus-storage/async-images/U3bZOyLnEKehWK5G8wnaw0/image-2.webp",
-  relativity: "/manus-storage/async-images/U3bZOyLnEKehWK5G8wnaw0/image-3.webp",
-  quantum: "/manus-storage/async-images/U3bZOyLnEKehWK5G8wnaw0/image-4.webp",
-  astrophysics: "/manus-storage/async-images/U3bZOyLnEKehWK5G8wnaw0/image-5.webp",
+  hero: "/assets/hero.jpg",
+  mechanics: "/assets/mechanics.jpg",
+  relativity: "/assets/relativity.png",
+  quantum: "/assets/quantum.png",
+  astrophysics: "/assets/astrophysics.jpg",
 };
 
 export type LessonSection = {
