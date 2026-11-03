@@ -1,14 +1,34 @@
-# Cosmic Path
+# EthioCosmos
 
-React / Express / tRPC / Drizzle starter, adapted from the Sandbox web-db-user template.
+EthioCosmos is a responsive physics learning website with separate Home, Courses, Lesson, Biography, Glossary, and Settings pages.
 
-- `pnpm dev`: development server; honors `PORT` (default 3000).
-- `pnpm build` / `pnpm start`: build and serve `dist/index.js` and `dist/public/`.
-- `pnpm db:migrate`: apply checked-in migrations. `pnpm db:push`: generate and apply new schema changes.
-- `pnpm check` / `pnpm test`: types and application tests.
+## Run locally
 
-Start with the Webdev skill's default-template guide. Platform login, storage, payments and service contracts live in its shared references; read the relevant capability before extending its helper.
+```bash
+pnpm install
+pnpm dev:static
+```
 
-`server/_core/publicConfig.ts` exposes only named public runtime values. Private keys stay server-side. The platform serves managed `/manus-storage/` assets; the application does not register a second proxy.
+Then open the local URL printed by Vite.
 
-Platform configuration is readable and editable through `webdev.config`. Default settings are initial values, not enforced constraints. The agent may modify the files, commands and configuration or follow the flexible guide for another stack.
+## Build for hosting
+
+```bash
+pnpm install
+pnpm check
+pnpm build:static
+```
+
+The static production files are generated in `dist/public`. Upload that directory to a static host such as GitHub Pages, Cloudflare Pages, Netlify, or Vercel.
+
+## Main routes
+
+- `/` — welcome page
+- `/learn` — course browser
+- `/learn/:slug` — detailed lesson pages
+- `/scientists` — biography index
+- `/scientists/:slug` — full scientist profiles
+- `/glossary` — physics reference
+- `/settings` — learning preferences
+
+The project uses Vite, React, TypeScript, Wouter, Tailwind CSS, and Lucide icons.
